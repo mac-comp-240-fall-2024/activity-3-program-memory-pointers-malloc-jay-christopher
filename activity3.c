@@ -18,7 +18,7 @@ void task3();
 
 int main() {
     // Task 1: call the first example to show how a pointer to int works
-    // task1();
+     task1();
 
     // Task 2: call the second example that creates static and dynamic arrays
     task2();
@@ -52,9 +52,9 @@ void task1() {
     /*
      * uncomment to test passing val2 by value and val1 by pointer
      */
-    //printf("before 2nd call: val1 = %d val2 = %d\n", val1, val2);
-    //ret = arg_modifier(val2, &val1);
-    //printf("after 2nd call: val1 = %d val2 = %d\n", val1, val2);
+    printf("before 2nd call: val1 = %d val2 = %d\n", val1, val2);
+    ret = arg_modifier(val2, &val1);
+    printf("after 2nd call: val1 = %d val2 = %d\n", val1, val2);
 }
 
 /*
@@ -73,6 +73,7 @@ int arg_modifier(int x, int *y) {
     printf("   leaving arg_modifier :    x = %d   *y = %d\n", x, *y);
     /* 
      * TODO: draw state of program stack at this point!
+
      */
     return x;
 }
@@ -130,7 +131,7 @@ void init_array(int *nums, int len, int mult) {
     //     next++;
     // }
 
-    // TODO: draw state of program stack and heap at this point
+
 }
 
 
